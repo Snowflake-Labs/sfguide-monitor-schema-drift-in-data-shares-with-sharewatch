@@ -379,3 +379,4 @@ else:
                         session.sql("call sharewatch.util.drop_schemadrift_monitor('" + share_to_remove + "')").collect()
                         remove_share_counter = remove_share_counter + 1
                     st.success("✅ " + str(remove_share_counter) + (" monitor " if remove_share_counter == 1 else " monitors ") + "successfully removed!")
+                    
